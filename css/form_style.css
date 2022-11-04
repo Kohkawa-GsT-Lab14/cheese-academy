@@ -1,0 +1,329 @@
+@charset "UTF-8";
+
+/* グローバル */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: .3s;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+:root {
+  --brand-color: rgb(255, 190, 0);
+  --brand-color-half: rgba(255, 190, 0, .5);
+  --sub-color: rgba(0, 140, 215);
+  --background-color: rgb(16, 30, 55);
+  --background-color-half: rgb(16, 30, 55, .5);
+  --card-color-pink-half: rgba(255,190, 200, .5);
+  --card-color-pink: rgb(255,190, 200);
+  --card-color-yellow-half: rgba(255, 240, 0, .5);
+  --card-color-yellow: rgb(255, 240, 0);
+  --card-color-blue-half: rgba(0, 225, 255, .4);
+  --card-color-blue: rgb(0, 225, 255);
+  --card-color-green-half: rgba(140, 230, 140, .5);
+  --card-color-green: rgb(140, 230, 140);
+}
+
+
+/* ヘッダー */
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(135deg, var(--background-color) 35%, var(--brand-color) 60%, rgb(255, 140, 0) 100%); 
+}
+
+header div.header-logo {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  flex: 2;
+}
+
+header div.header-logo > a {
+  display: flex;
+  align-items: center;
+}
+
+header img.logo {
+  height: 50px;
+  margin-left: 24px;
+  margin-right: 12px;
+}
+
+header img.logo-name-wh {
+  width: 380px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav li a {
+  display: block;
+  line-height: 64px;
+  padding: 0 6px;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+header nav li {
+  margin-right:calc(50px - 6*2px);
+}
+
+nav a:hover {
+  color: black;
+}
+
+nav > ul > li:nth-of-type(3n+1) a:hover {
+  background-color: var(--card-color-pink);
+}
+
+nav > ul > li:nth-of-type(3n+2) a:hover {
+  background-color: var(--card-color-yellow-half);
+}
+
+nav > ul > li:nth-of-type(3n) a:hover {
+  background-color: var(--card-color-green-half);
+}
+
+
+
+/* 問い合わせフォーム */
+#contact {
+  position: relative;
+  top: 100px;
+  margin-top: 60px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact_container {
+  width: 640px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact_title h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.contact_title p {
+  margin-bottom: 60px;
+  font-size: 18px;
+}
+
+.contact_text p + p {
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+.contact_text p {
+  font-size: 16px;
+  line-height: 1.2rem;
+  text-align: center;
+}
+
+form dl {
+  width: 640px;
+  border-top: 2px solid #bfbfbf;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form dt {
+  width: 240px;
+  padding-left: 16px;
+  padding-right: 64px;
+  line-height: 52px;
+  border-right: 1px solid #bfbfbf;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+form dt.trigger {
+  line-height: 26px;
+}
+
+select.trigger-select {
+  color: gray;
+}
+
+
+form dd {
+  width: 400px;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+form dd > input, select, textarea {
+  width: 328px;
+  height: 36px;
+  margin-top: 8px;
+  margin-left: 8px;
+  margin-bottom: 8px;
+}
+
+form .motivation p {
+  text-align: unset;
+  margin: 12px 0 8px 12px;
+}
+
+input[type=checkbox] {
+	transform: scale(1.8);
+	margin: 0 6px 0 8px;
+}
+
+textarea {
+  height: 120px;
+}
+
+a.form-btn {
+  margin: 30px 170px 140px;
+  width: 300px;
+  display: block;
+  font-size: 18px;
+  line-height: 60px;
+  text-align: center;
+  color: white;
+  background-color: var(--brand-color);
+}
+
+a.form-btn:hover {
+  opacity: 0.8;
+}
+
+/* フッター */
+footer {
+  padding: 16px 32px 30px;
+  color: white;
+  position: relative;
+  background-image: linear-gradient(135deg, var(--brand-color) 40%, rgb(255, 140, 0) 100%);
+}
+
+/* footerの影 (filterプロパティ未対応のブラウザ) */
+footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.16); /* filterが効かない場合黒い影をつける */
+  z-index: -1;
+}
+
+/* footerの影 (filterプロパティ対応済のブラウザ) */
+@supports (-webkit-filter: blur(6px)) {
+  footer::before {
+    background-image: linear-gradient(135deg, var(--brand-color) 40%, rgb(255, 140, 0) 100%);
+    -webkit-filter: blur(6px);
+    filter: blur(6px);
+    transform: translateY(-6px);
+    box-shadow: none;
+  }
+}
+
+footer .footer_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer div.company {
+  display: flex;
+  align-items: center;
+}
+
+footer img.logo-wh  {
+  height: 40px;
+}
+
+footer img.logo-name-wh {
+  height: 50px;
+}
+
+div.footer-list {
+  display: flex;
+  margin: 12px 48px;
+}
+
+footer nav {
+  margin-right: 64px;
+}
+
+footer nav li {
+  min-width: 160px;
+  list-style: none;
+  margin-bottom: 4px;
+}
+
+footer nav a,
+.social-media a
+{
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+.social-media > div {
+  margin-bottom: 4px;
+}
+
+.social-media a {
+  font-size: 18px;
+}
+
+.social-media a:hover {
+  opacity: .7;
+}
+
+.social-media {
+  margin-right: 16px;
+}
+
+footer .illustration {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+footer .illustration p {
+  padding-right: 32px;
+  font-size: 32px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  line-height: 38px;
+}
+
+footer .illustration img {
+  width: 200px;
+}

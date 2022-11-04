@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- 最初の設定は終わっています　必要な方は触ってください -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="robots" content="noindex">
+  <title>チーズアカデミー</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+</head>
+<!-- 最初の設定は終わっています　必要な方は触ってください -->
+
+<body>
+  <!-- この中に記述していく -->
+  <!-- ここから下にコードを書く -->
+  <header id="header">
+    <div class="header-logo">
+      <img src="./img/logo.png" class="logo" alt="ロゴ">
+      <img src="./img/logo_name_v2_white.png" class="logo-name-wh" alt="Cheese ACADEMY TOKYO">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#features">3 POINTS</a></li>
+        <li><a href="#course">COURSE</a></li>
+        <li><a href="#news">NEWS</a></li>
+        <li><a href="#examples">MESSAGE</a></li>
+        <li><a href="#access">ACCESS</a></li>
+      </ul>
+    </nav>
+
+    <div class="openbtn">
+      <span></span><span></span><span></span>
+    </div>
+
+  </header>
+
+  <main>
+    <!-- スクロール開始監視用空要素 -->
+    <div id="target"></div>
+
+    <!-- Top画像 -->
+    <section id="top">
+      <div class="top_contents">
+        <div>
+          <div class="top_main-message glow-anime">
+            セカイを変えるチーズを作ろう
+          </div>
+          <div class="top_sub-message delay-1">
+            社会課題のソリューションを生み出し実行する力を養う「チーズアカデミーTOKYO」
+          </div>
+          <div class="top_sub-message delay-2">
+          あなたはチーズで何を変えられる？</div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- § 1 ABOUT -->
+    <section id="about">
+      <div class="top-message">
+        <!-- 左列・テキスト -->
+        <div class="message-box animate slide-from-left">
+          <div>
+            <div class="message-box-flex">
+              <h2>About</h2>
+              <h3>アカデミーについて</h3>
+              <div class="messagebox-text">
+                <p>
+                  チーズアカデミーTOKYOは、<br>
+                  「チーズで世界を変えるとしたら？」をスタート地点に、<br>「デザイン思考」を実践するスクールです。
+                </p>  
+                <p>
+                  不確実性に満ちたビジネスの世界で<br>
+                  新たな価値を生み出すには、<br>
+                  多様な人たちと持ち味を活かして高め合うことが重視されています。
+                </p>
+                <p>
+                  チーズアカデミーTOKYOは、<br>
+                  オンラインでどこからでも参加でき、<br>
+                  チームによるソリューション開発を<br>
+                  スピーディに進めるオンラインシステムを導入しています。
+                </p>
+                <p>
+                  変化のスピードが増すビジネスの世界で<br>
+                  強力な武器となるデザイン思考を実践してみませんか？
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 右列・画像 -->
+        <div class="message-img animate slide-from-right">
+          <img src="img/dummy_17.jpeg" alt="">
+        </div>
+      </div>
+      <!-- カリキュラム -->
+      <div class="step-tittle">
+        <h2>カリキュラム</h2>
+        <p><span>デザイン思考サイクル</span>を何度も回しながら<br>チームでソリューションを生み出す実践力を高めます。<br>未経験からでもスタートができるよう、カリキュラムは多くの専門家や現役チーズ職人のアドバイスのもと、作られました。</p>
+      </div> 
+      <!-- カード -->
+      <div class="step">
+        <!-- カード１ -->
+        <div class="step-card animate">
+          <div class="step-card-container">
+            <img src="./img/about_03.jpg" width="36" height="36" alt="STEP1 課題リサーチ">
+            <p>STEP 1</p>
+            <p>リサーチ</p>
+            <p>
+              予備知識と課題の整理
+            </p>
+            <div class="step-card-text">
+              <p>
+                まずは個別に予備知識となる情報を収集して課題を整理します。
+              </p>
+              <p>
+                深掘りしたい情報、足りない情報などを整理して、これから始まるチームでのソリューション開発の準備をします。
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="triangle animate"></div>
+        
+        <!-- カード２ -->
+        <div class="step-card animate step_delay_2">
+          <div class="step-card-container">
+            <img src="./img/course_02.jpg" width="36" height="36" alt="STEP2 理解">
+            <p>STEP 2</p>
+            <p>理解</p>
+            <p>必要な知識もしっかり取得</p>
+            <div class="step-card-text">
+              <p>
+                チーズ作りは、食に関する知識が欠かせません。
+              </p>
+              <p>
+                一流講師陣による、
+                チーズ作りに必要ないろはを余すところなく学べます。
+              </p>
+              <p>
+                チーズそのものでなく、栄養学や畜産業が抱える課題も学べますので、チーズ以外への展開も夢ではないでしょう。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="triangle animate step_delay_2_t"></div>
+
+
+        <!-- カード３ -->
+        <div class="step-card animate step_delay_3">
+          <div class="step-card-container">
+            <img src="./img/dummy_13.jpeg" alt="STEP3 アイディアの発散">
+            <p>STEP 3</p>
+            <p>発散</p>
+            <p>チームでアイディア整理</p>
+            <div class="step-card-text">
+              <p>
+                知識と情報をもとに、チームでアイディアを出し合い、デザイン思考でスピーディに整理します。
+              </p>
+              <p>
+                アイディアを検証する次のステップに向けて、限られた時間の中で協力して課題への解決策を探ります。
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="triangle animate step_delay_3_t"></div>
+
+        <!-- カード４ -->
+        <div class="step-card animate step_delay_4">
+          <div class="step-card-container">
+            <img src="./img/about_02.jpg" alt="STEP4 実地研修">
+            <p>STEP 4</p>
+            <p>実地研修</p>
+            <p>本格的な農園で実地研修</p>
+            <div class="step-card-text">
+              <p>
+                チーズアカデミーでは、本格的な農園を使った実地研修を行うことができます。
+              </p>
+              <p>
+                プロとして活躍するチーズ職人も使用するような、広大で環境も整った農園を余すところ
+                なく使い、アイディアを検証します。
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="triangle animate step_delay_4_t"></div>
+
+        <!-- カード５ -->
+        <div class="step-card animate step_delay_5">
+          <div class="step-card-container">
+            <img src="./img/dummy_6.jpeg" alt="STEP5 プロトタイプ">
+            <p>STEP 5</p>
+            <p>プロトタイプ</p>
+            <p>解決策の具体化</p>
+            <div class="step-card-text">
+              <p>
+                アイディアを修正して、商品・サービスのプトタイプをつくります。
+              </p>
+              <p>
+                すべてのアイディアを検証する時間はありません。チームでアイディアを取捨選択し、優先順位をつけて必要最小限の機能に絞り込みます。
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        
+        <div class="triangle animate step_delay_5_t"></div>
+
+        <!-- カード６ -->
+        <div class="step-card animate step_delay_6">
+          <div class="step-card-container">
+            <img src="./img/about_01.jpg" alt="STEP6 ティスティング審査">
+            <p>STEP 6</p>
+            <p>検証</p>
+            <p>テストヒアリング</p>
+            <div class="step-card-text">
+              <p>
+                プロトタイプを実際のユーザーに検証していただきます。
+              </p>
+              <p>
+                チーズ作りを行う場合は、一般参加によるティスティング審査によって、作り手の目線だけでなく、消費者の目線から、しっかりと評価いただくことができます。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="triangle animate step_delay_6_t"></div>
+
+        <!-- カード７ -->
+        <div class="step-circle animate step_delay_7">
+          <img src="./img/about_04.jpg" width="36" height="36" alt="STEP6 ">
+          <p>プレゼンテーション</p>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- § 2 特長 3points -->
+    <section id="features">
+      <!-- パララックス -->
+      <div class="features-tittle-img">
+        <div class="features-tittle">
+          <div>
+            <img src="./img/logo_name_v4_white.png" alt="Cheese ACADEMY">
+          </div>
+          <p>
+            <span>3</span>Points
+          </p>
+        </div> 
+      </div>
+
+      <!-- 3 poits -->
+      <div class="features-container">
+        <!-- 特長１ -->
+        <div class="point-1 point">
+          <div class="features-content">
+            <!-- テキスト部分 -->
+            <div class="features-text"> 
+              <div class="features-point">
+                <!-- ナンバリングカード -->
+                <div class="features-card">
+                  <div class="features-card-line">
+                    <p class="point">Point</p>
+                    <p class="point-num">1</p>
+                  </div>
+                </div>
+                <!-- 見出し -->
+                <h1>多元LIVEシステムで<br>チーム別作業も<br>ノンストップ！</h1>
+              </div>
+              <!-- 説明 -->
+              <div class="point-description">
+                <p>オンライン参加者全員が集まる<span>"ラウンジ"</span>のほかに<br>チームに分かれてディスカッションや作業を行える<br><span>”プロジェクトルーム”</span>を自由に作成できます。</p>
+                <p>チーム別やチーム間のコミュニケーションを<br>フレキシブルに進めます。</p>
+              </div>
+              <!-- リンクボタン -->
+              <div class="btn">
+                詳細
+                <i class="bi bi-chevron-double-right"></i>
+              </div>
+            </div>
+            <!-- 画像部分 -->
+            <div class="features-img">
+              <img src="./img/dummy_27.jpg" alt="オンライン多元LIVEシステム">
+            </div>
+          </div>
+        </div>
+
+        <!-- 特長２ -->
+        <div class="point-2 point">
+          <div class="features-content">
+            <!-- テキスト部分 -->
+            <div class="features-text">
+              <!-- ナンバリングカード -->
+              <div class="features-point">
+                <div class="features-card">
+                  <div class="features-card-line">
+                    <p class="point">Point</p>
+                    <p class="point-num">2</p>
+                  </div>
+                </div>
+                <!-- 見出し -->
+                <h1>オンライン思考整理ツールで<br>合意形成を<br>スピードアップ！</h1>
+              </div>
+              <!-- 説明 -->
+              <div class="point-description">
+                <p>デザイン思考のデザインとは、設計すること。<br>情報やアイディアの整理には様々なツールが使われます。</p>
+                <p>これらのツールをオンラインでスピーディに使いこなし<br>ハンズオンでビジネスをデザインしていきます。<br><span>遠隔のチームメンバーとの協働</span>も<br><span>オンラインツールキット</span>が強力にサポートします。</p>
+              </div>
+              <!-- リンクボタン -->
+              <div class="btn">
+                詳細
+                <i class="bi bi-chevron-double-right"></i>
+              </div>
+            </div>
+              <!-- 画像部分 -->
+            <div class="features-img">
+              <img src="./img/dummy_23.jpg" alt="オンライン思考整理ツール">
+            </div>
+          </div>
+        </div>
+        
+        <!-- 特長３ -->
+        <div class="point-3 point">
+          <div class="features-content">
+            <!-- テキスト部分 -->
+            <div class="features-text">
+              <!-- ナンバリングカード -->
+              <div class="features-point">
+                <div class="features-card">
+                  <div class="features-card-line">
+                    <p class="point">Point</p>
+                    <p class="point-num">3</p>
+                  </div>
+                </div>
+                <!-- 見出し -->
+                <h1>ダッシュボードが<br>チームマネジメントを<br>バックアップ</h1>
+              </div>
+              <!-- 説明 -->
+              <div class="point-description">
+                <p>スピーディにデザイン思考のプロセスを進めるには<br><span>マインドセット</span>も重要です。</p>
+                <p>AIを活用したダッシュボードが<br>メンバーの感情面にも着目してマネジメントをバックアップ！<br>プロジェクトの進捗管理だけでなく、<br>創造的でユニークなチームのパフォーマンスを支えます。</p>
+              </div>
+              <!-- リンクボタン -->
+              <div class="btn">
+                詳細
+                <i class="bi bi-chevron-double-right"></i>
+                </div>
+            </div>
+            <!-- 画像部分 -->
+            <div class="features-img caption">
+              <img src="https://www.finereport.com/jp/wp-content/uploads/2020/11/graph-interactive.gif" alt="">
+              <small>画像出典:FineReport</small>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- § 3 コース -->
+    <section id="course">
+      <div class="course_title">
+        <h2>COURSE</h2>
+        <h3>受講コース</h3>
+      </div>
+
+      <!-- ３コース -->
+      <div class="course_card-animation">
+        <div class="course_container">
+          <!-- カード１ -->
+          <div class="course_card">
+            <a href="" class="btnripple">
+              <img src="https://media.goodpatch.com/cms/2017/11/main.jpg" alt="ビジネスパーソン">
+              
+              <div class="course_logo">
+                <img src="./img/logo.png" class="course_logo-img" alt="ロゴ">
+                <p>ビジネスコース</p>
+              </div>
+              <p>
+                不確実性に満ちたビジネスの世界で新たな価値を見出し、より良いビジネスをデザインし続けるためのスキルとマインドセットを磨きます。
+              </p>
+              <div class="course_arrow">
+                <i class="bi bi-chevron-double-right"></i>
+                <i class="bi bi-chevron-double-right"></i>
+                <i class="bi bi-chevron-double-right"></i>
+              </div>
+            </a>
+          </div>
+  
+          <!-- カード２ -->
+          <div class="course_card delay-time-1">
+            <a href="" class="btnripple">
+              <img src="https://offerbox.jp/company/wp-content/uploads/2021/03/pixta_63428748_M.jpg" alt="大学生・就活生">
+              <div class="course_logo">
+                <img src="./img/logo.png" class="course_logo-img" alt="ロゴ">
+                <p>大学生コース</p>
+              </div>
+              <p>
+                課題に対する解決策をチームで生み出すカリキュラムを通じて、将来のビジネス現場で活かせる思考プロセスやコミュニケーション力を高めます。
+              </p>
+              <div class="course_arrow">
+                <i class="bi bi-chevron-double-right"></i>
+                <i class="bi bi-chevron-double-right"></i>
+                <i class="bi bi-chevron-double-right"></i>
+              </div>
+            </a>
+          </div>
+  
+          <!-- カード３ -->
+          <div class="course_card delay-time-2">
+            <a href="" class="btnripple">
+              <img src="https://brava-mama.jp/wp-content/uploads/2021/09/4938225_s.jpg" alt="オンライン探究学習">
+              <div class="course_logo">
+                <img src="./img/logo.png" class="course_logo-img" alt="ロゴ">
+                <p>探究学習コース</p>
+              </div>
+              <p>
+                自ら問いを立て、解決に向けて情報を収集・整理・分析したり、周囲の人と意見交換したりしながら進める探究学習。オンラインで地域を越えて学び合います。
+              </p>
+              <div class="course_arrow">
+                <i class="bi bi-chevron-double-right"></i>
+                <i class="bi bi-chevron-double-right"></i>
+                <i class="bi bi-chevron-double-right"></i>
+              </div>
+            </a>
+          </div>
+  
+        </div>
+      </div>
+    </section>
+
+    <!-- § 4 ニュース -->
+    <section id="news">
+      <div class="news_title">
+        <h2>News</h2>
+        <h3>ニュース</h3>
+        <p class="news_event">
+          ハッカソン参加者募集中！
+        </p>
+      </div>
+
+      <!-- スライドショー -->
+      <div class="splide" aria-label="news_slider">
+        <div class="splide-wrapper">
+          <div class="splide__track">
+            <div class="splide__list">
+              <!-- スライド１ -->
+              <div class="splide__slide">
+                <img src="./img/about_01.jpg" alt="">
+                <!-- テキスト -->
+                <div class="card-content">
+                  <p class="news_genre hackathon">ハッカソン</p>
+                  <p class="news_date">2016/11/18</p>
+                  <p class="news_content">
+                    チーズアカデミー卒業生のコスゲさんによるチーズだけをふんだんに使用した話題のピザ屋「Kosuge Pizza」が渋谷でオープンしました！
+                  </p>
+                </div>
+              </div>
+              <!-- スライド ２-->
+              <div class="splide__slide">
+                <img src="./img/about_02.jpg" alt="">
+                <!-- テキスト -->
+                <div class="card-content">
+                  <p class="news_genre news">News</p>
+                  <p class="news_date">2016/11/18</p>
+                  <p class="news_content">
+                    チーズアカデミー卒業生のコスゲさんによるチーズだけをふんだんに使用した話題のピザ屋「Kosuge Pizza」が渋谷でオープンしました！
+                  </p>
+                </div>
+              </div>
+              <!-- スライド ３-->
+              <div class="splide__slide">
+                <img src="./img/about_03.jpg" alt="">
+                <!-- テキスト -->
+                <div class="card-content">
+                  <p class="news_genre event">イベント</p>
+                  <p class="news_date">2016/11/18</p>
+                  <p class="news_content">
+                    チーズアカデミー卒業生のコスゲさんによるチーズだけをふんだんに使用した話題のピザ屋「Kosuge Pizza」が渋谷でオープンしました！
+                  </p>
+                </div>
+              </div>
+              <!-- スライド ４-->
+              <div class="splide__slide">
+                <img src="./img/about_04.jpg" alt="">
+                <!-- テキスト -->
+                <div class="card-content">
+                  <p class="news_genre lesson">無料体験講座</p>
+                  <p class="news_date">2016/11/18</p>
+                  <p class="news_content">
+                    チーズアカデミー卒業生のコスゲさんによるチーズだけをふんだんに使用した話題のピザ屋「Kosuge Pizza」が渋谷でオープンしました！
+                  </p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- リンクボタン -->
+      <div class="btn">
+        イベント一覧
+        <i class="bi bi-chevron-double-right"></i>
+      </div>
+
+    </section>
+
+    <!-- § 5 Message 受講生の声 -->
+    <section id="examples">
+      <div class="ex-title">
+        <img src="./img/logo_name_v4_white.png" alt="Cheese ACADEMY">
+        <h2>受講生の声</h2>
+      </div>
+
+      <!-- カード全体-->
+      <div class="ex-container animate">
+
+        <!-- カード１ -->
+        <div class="ex_card-border">
+          <!-- コンテンツ一体化 -->
+          <div class="ex-content">
+            <!-- 横並び -->
+            <div class="ex-img-title">
+              <!-- 画像 -->
+              <img src="img/business.jpeg" alt="企業">
+              <!-- カードタイトル -->
+              <div class="ex-card-title">
+                <div class="ex-card-line">
+                  <p class="ex-user">ビジネス</p>
+                  <p class="ex-theme">
+                    <i class="bi bi-check2-square"></i>
+                    チーム<br>&emsp;&ensp;ビルディング</p>
+                  <p class="ex-theme">
+                    <i class="bi bi-check2-square"></i>
+                    会議<br>&emsp;&ensp;スピードアップ</p>
+                  <p class="ex-theme">
+                    <i class="bi bi-check2-square"></i>
+                    採用プロセス</p>
+                </div>
+              </div>
+            </div>
+            <!-- 縦並び・メッセージカード -->
+            <div class="ex-list">
+                <p class="card delay-1"><span>社員研修</span>に導入。部署の垣根を超えて互いの強みを活かしたチーム貢献意識が高まりました</p>
+                <p class="card delay-2"><span>会議中</span>に<span>思考整理ツールで合意形成</span>。会議後の確認・承認がスピードアップしました</p>
+                <p class="card delay-3">面接とは違った角度で理解を深め合える。<span>採用</span>プロセスで実技試験のようなカタチで導入検討したい</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- カード２ -->
+        <div class="ex_card-border">
+          <!-- コンテンツ一体化 -->
+          <div class="ex-content">
+            <!-- 横並び -->
+            <div class="ex-img-title">
+              <!-- 画像 -->
+              <img src="img/municipality.jpg" alt="自治体">
+              <!-- カードタイトル -->
+              <div class="ex-card-title delay-4">
+                <div class="ex-card-line">
+                  <p class="ex-user">自治体</p>
+                  <p class="ex-theme">
+                    <i class="bi bi-check2-square"></i>
+                    地域課題への<br>&emsp;&ensp;コラボ促進</p>
+                  <p class="ex-theme">
+                    <i class="bi bi-check2-square"></i>
+                    部門横断<br>&emsp;&ensp;プロジェクト</p>
+                </div>
+              </div>
+            </div>
+            <!-- 縦並び・メッセージカード -->
+            <div class="ex-list">
+              <p class="card delay-5">地域課題を共有して解決に向けたアクションを整理。<span>地元企業との協働</span>が進展しました</p>
+              <p class="card delay-6">地域課題解決の<span>オンライン・ハッカソン</span>を開催。地域外の人の視点からの発見も多かった</p>
+              <p class="card delay-7"><span>部門横断的なプロジェクト</span>でコミュニケーションが活発になりました</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- カード３ -->
+        <div class="ex_card-border">
+          <!-- コンテンツ一体化 -->
+          <div class="ex-content">
+            <!-- 横並び -->
+            <div class="ex-img-title">
+              <!-- 画像 -->
+              <img src="img/school.jpg" alt="学校">
+              <!-- カードタイトル -->
+              <div class="ex-card-title delay-8">
+                <div class="ex-card-line">
+                  <p class="ex-user">学校</p>
+                  <p class="ex-theme">
+                    <i class="bi bi-check2-square"></i>
+                    探究学習</p>
+                  <p class="ex-theme">
+                    <i class="bi bi-check2-square"></i>
+                    グループ学習</p>
+                </div>
+              </div>
+            </div>
+            <!-- 縦並び・メッセージカード -->
+            <div class="ex-list">
+              <p class="card delay-9">教員として<span>探究学習の指導</span>に役立てたくて受講。<span>社会で必要なスキル</span>も実践を通してあらためて実感できました。</p>
+              <p class="card  delay-10">オンラインでの在宅学習では子どもたちの<span>コミュニケーション</span>不足が課題でした。<span>オンラインでグループ学習</span>を進めやすく積極的に活用したい</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- § 6 アクセス・会社情報 -->
+    <section id="access">
+      <div class="access-title">
+        <h2>ACCESS</h2>
+        <h3>会社情報</h3>
+      </div>
+      <div class="access-content">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.3923456258094!2d139.71166271524453!3d35.66734013834117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c9faa249f2b%3A0xc415d41a1217b607!2z44CSMTA3LTAwNjEg5p2x5Lqs6YO95riv5Yy65YyX6Z2S5bGx77yT5LiB55uu77yV4oiS77yWIDJm!5e0!3m2!1sja!2sjp!4v1666322855877!5m2!1sja!2sjp" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <dl>
+          <dt>学校名</dt>
+          <dd>チーズアカデミーTOKYO</dd>
+          <dt>事務所所在地</dt>
+          <dd>〒107-0061東京都港区北青山3-5-6 青朋ビル2F</dd>
+          <dt>TEL</dt>
+          <dd>03-5413-5045</dd>
+          <dt>FAX</dt>
+          <dd>03-5413-5046</dd>
+          <dt>MAIL</dt>
+          <dd>dummy@cheeseacademy.tokyo</dd>
+        </dl>
+      </div>
+    </section>
+
+    <!-- 固定表示１　ページトップに戻る -->
+    <div id="back-to-top">
+      <a href="#">
+        <div class="triangle"></div>
+        <p>Top</p>
+      </a>
+    </div>
+
+  <!-- 固定表示２　問い合わせフォームページへのリンク -->
+  <aside>
+    <div>
+      <a href="./form.html">
+        <i class="bi bi-envelope-fill"></i>
+        説明会お申し込み・お問い合せ
+      </a>
+    </div>
+  </aside>
+
+  <!-- フッター -->
+  <footer>
+    <div class="footer_container">
+
+      <div class="footer_left">
+        <!-- ロゴ＋社名 -->
+        <div class="company">
+          <img src="./img/logo_wh.png" class="logo-wh" alt="ロゴ">
+          <img src="./img/logo_name_v3_white.png" class="logo-name-wh" alt="Cheese ACADEMY">
+        </div>
+        <!-- リンク集 -->
+        <div class="footer-list">
+          <!-- ナビゲーション -->
+          <nav>
+            <ul>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#features">3 POINTS</a></li>
+              <li><a href="#course">COURSE</a></li>
+              <li><a href="#event-news">NEWS</a></li>
+              <li><a href="#examples">MESSAGE</a></li>
+              <li><a href="#access">ACCESS</a></li>
+            </ul>
+          </nav>
+          <!-- SNSアイコン -->
+          <div class="social-media">
+            <div>
+              <a href="">
+                <i class="bi bi-facebook"></i>
+                facebook
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <i class="bi bi-twitter"></i>
+                Twitter
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <i class="bi bi-linkedin"></i>
+                LinkedIn
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <i class="bi bi-youtube"></i>
+                Youtube
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- イラスト＋メッセージ -->
+      <div class="illustration">
+        <p>Promoting Growth<br>&amp;<br>Professionalism</p>
+        <img src="img/dummy_28.png" alt="イラスト">
+      </div>
+    </div> 
+    <small>© 2016 Cheese Academy Tokyo All RIghts Reserved.</small>
+  </footer>
+  <!-- ここから上にコードを書く -->
+  <!-- この中に記述していく -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+  <script src="js/splide.min.js"></script>
+  <script src="js/splide-extension-auto-scroll.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

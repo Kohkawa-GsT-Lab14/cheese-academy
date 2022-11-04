@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>チーズアカデミー問い合わせフォーム</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/form_style.css">
+</head>
+<body>
+  <header>
+    <div class="header-logo">
+      <a href="./index.html">
+        <img src="./img/logo.png" class="logo" alt="ロゴ">
+        <img src="./img/logo_name_v2_white.png" class="logo-name-wh" alt="Cheese ACADEMY TOKYO">
+      </a>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./index.html#about">ABOUT</a></li>
+        <li><a href="./index.html#features">3 POINTS</a></li>
+        <li><a href="./index.html#course">COURSE</a></li>
+        <li><a href="./index.html#news">NEWS</a></li>
+        <li><a href="./index.html#examples">MESSAGE</a></li>
+        <li><a href="./index.html#access">ACCESS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="contact">
+      <div class="contact_container">
+        <div class="contact_title">
+          <h2>CONTACT</h2>
+          <p>説明会お申し込み・お問い合わせ</p>
+        </div>
+        
+        <div class="contact_text">
+          <p>ぜひ1度、足を運んでみませんか。説明会は随時開催中。<br>その他、お問い合わせもお気軽にどうぞ。お待ちしております。
+          </p>
+          <p>※チーズアカデミーは実際には存在しません。<br>間違っても問い合わせしないようお願いいたします。
+          </p>
+        </div>
+  
+        <form action method="POST">
+          <dl>
+            <dt>名前</dt>
+            <dd><input type="text" placeholder="フルネーム" name="" id=""></dd>
+  
+            <dt>カナ</dt>
+            <dd><input type="text" name="" id=""></dd>
+  
+            <dt>メールアドレス</dt>
+            <dd><input type="email" name="" id=""></dd>
+  
+            <dt  class="trigger">チーズアカデミーを<br>知ったきっかけ</dt>
+            <dd>
+              <select class="trigger-select" name="trigger" onchange="Color(this)" required>
+                <option value="" disabled selected>選択してください</option>
+                <option value="browsing">google検索</option>
+                <option value="socialmedia">SNS</option>
+                <option value="introduction">紹介</option>
+                <option value="passing">たまたま通りかかった</option>
+                <option value="others">その他</option>
+              </select>
+            </dd>
+  
+            <dt>志望動機</dt>
+            <dd class="motivation">
+              <p><input type="checkbox" name="" id="startup">
+              <label for="startup">起業したい</label>
+              </p>
+              <p><input type="checkbox" name="" id="startup">
+              <label for="job-chang">チーズ系企業に就職・転職したい</label>
+              </p>
+              <p><input type="checkbox" name="" id="startup">
+              <label for="business">チーズと関わる仕事をしており、仕事に生かしたい</label>
+              </p>
+              <p><input type="checkbox" name="" id="startup">
+              <label for="culture">チーズの教養を身につけたい</label>
+              </p>
+            </dd>
+  
+            <dt>詳細</dt>
+            <dd>
+              <textarea name="" id="" cols="50" rows="10"></textarea>
+            </dd>
+          </dl>
+          
+          <a href="" class="form-btn">送信</a>
+  
+        </form> 
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer_container">
+      <div class="footer_left">
+        <div class="company">
+          <img src="./img/logo_wh.png" class="logo-wh" alt="ロゴ">
+          <img src="./img/logo_name_v3_white.png" class="logo-name-wh" alt="Cheese ACADEMY">
+        </div>
+      
+        <div class="footer-list">
+          <nav>
+            <ul>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#features">3 POINTS</a></li>
+              <li><a href="#course">COURSE</a></li>
+              <li><a href="#event-news">NEWS</a></li>
+              <li><a href="#examples">MESSAGE</a></li>
+              <li><a href="#access">ACCESS</a></li>
+            </ul>
+          </nav>
+  
+          <div class="social-media">
+            <div>
+              <a href="">
+                <i class="bi bi-facebook"></i>
+                facebook
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <i class="bi bi-twitter"></i>
+                Twitter
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <i class="bi bi-linkedin"></i>
+                LinkedIn
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <i class="bi bi-youtube"></i>
+                Youtube
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="illustration">
+        <p>Promoting Growth<br>&amp;<br>Professionalism</p>
+        <img src="img/dummy_28.png" alt="イラスト">
+      </div>
+    </div> 
+    <small>© 2016 Cheese Academy Tokyo All RIghts Reserved.</small>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
